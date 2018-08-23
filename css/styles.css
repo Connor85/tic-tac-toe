@@ -1,1 +1,11 @@
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eigth, #ninth  {
+  /*width: 300px;*/
+  height: 300px;
+  margin: none;
+  border: black 1px solid;
+}
 
+.col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}

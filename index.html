@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pig Dice</title>
+  <title>Tic Tac Toe</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
+  <h1 class="jumbotron"> Tic Tac Toe</h1>
   <div class="container">
-    <h1 class="jumbotron">PIG DICE!</h1>
     <div class="row">
-
-
-
-      <div class="col-md-6">
-        <form id="player1">
-          <h2>PLAYER1</h2>
-          <div id="player1-dice" >YOUR DICE:<span id="player1-dice-number"></span>
-            <div id="player1RoundScore">YOUR ROUNDS SCORE IS: <span id="player1-round-score"></span></div>
-            <div id="player1-score">YOUR TOTAL SCORE IS:<span id="player1-total-score"></span></div>
-          </div>
-          <button id="player1-roll" type="click" class="btn-success">ROLL</button>
-          <button id="player1-hold" type="click" class="btn-danger">HOLD</button>
-        </form>
-
-
-      </div>
-      <div class="col-md-6">
-        <form id="player2">
-          <h2>PLAYER2</h2>
-          <div id="player2-dice" >YOUr DICE:<span id="player2-dice-number"></span>
-            <div id="player2RoundScore">YOUR ROUNDS SCORE IS: <span id="player2-round-score"></span></div>
-            <div id="player2-score">YOUR TOTAL SCORE IS:<span id="player2-total-score"></span></div>
-
-          </div>
-
-          <button id="player2-roll" type="click" class="btn-success">ROLL</button>
-          <button id="player2-hold" type="click" class="btn-danger">HOLD</button>
-        </form>
+      <div class="col-md-4">
+        <div id="first" onClick="icon(this.id)" class="game-field">1</div>
+        <div id="second" onClick="icon(this.id)" class="game-field">2</div>
+        <div id="third" onClick="icon(this.id)" class="game-field">3</div>
       </div>
 
+      <div class="col-md-4">
+        <div id="fourth" onClick="icon(this.id)" class="game-field">4</div>
+        <div id="fifth" onClick="icon(this.id)" class="game-field">5</div>
+        <div id="sixth" onClick="icon(this.id)" class="game-field">6</div>
+      </div>
 
-    </div>
-    <div>
-      <h2 id="player1Wins">Player 1 Wins!!!!!</h2>
-      <h2 id="player2Wins">Player 2 Wins!!!!!</h2>
-
+      <div class="col-md-4">
+        <div id="seventh" onClick="icon(this.id)" class="game-field">7</div>
+        <div id="eigth" onClick="icon(this.id)" class="game-field">8</div>
+        <div id="ninth" onClick="icon(this.id)" class="game-field">9</div>
+      </div>
     </div>
   </div>
 </body>
